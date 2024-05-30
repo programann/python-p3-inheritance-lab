@@ -1,8 +1,9 @@
+# student_test.py
 #!/usr/bin/env python3
 
 from student import Student
 from user import User
-        
+
 class TestStudent:
     '''Class "Student" in student.py'''
 
@@ -19,6 +20,7 @@ class TestStudent:
         '''initializes with empty list attribute "knowledge".'''
         my_student = Student("My", "Student")
         assert(hasattr(my_student, "knowledge"))
+        assert(my_student.knowledge == [])
 
     def test_can_learn(self):
         '''learns from a string and adds to self.knowledge.'''
